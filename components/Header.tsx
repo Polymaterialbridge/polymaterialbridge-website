@@ -17,7 +17,7 @@ const Header: React.FC = () => {
     <header className="bg-slate-900 text-white sticky top-0 z-50 shadow-lg">
       <div className="container mx-auto px-4 md:px-8 flex justify-between items-center h-20">
         <Link to="/" className="flex items-center">
-          <img src="/logo.png" alt="PolyMaterialBridge" className="h-16" />
+          <img src="/logo.png" alt="PolyMaterialBridge" className="h-16" style={{maxHeight: '48px'}} />
         </Link>
         
         <nav className="flex space-x-6">
