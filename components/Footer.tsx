@@ -9,9 +9,8 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-8">
           {/* Logo & Slogan */}
           <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-teal-500 rounded flex items-center justify-center font-bold text-white text-lg">PMB</div>
-              <span className="text-lg font-bold text-white tracking-tight">PolyMaterialBridge</span>
+            <div className="mb-4">
+              <img src="/logo.png" alt="PolyMaterialBridge" className="h-10" />
             </div>
             <p className="text-sm italic leading-relaxed">
               "Connecting Polymer Supply and Demand across Europe."
