@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import PlaceholderImage from '../components/PlaceholderImage';
 
 const Home: React.FC = () => {
   return (
@@ -17,9 +15,12 @@ const Home: React.FC = () => {
               Independent brokerage for PP and PE materials across Europe.
             </h2>
             
-            {/* Image Placeholder aligned with H1/H2 text start */}
             <div className="w-full">
-              <PlaceholderImage label="Main Hero Visual - Polymer Logistics" className="shadow-2xl" />
+              <img 
+                src="/images/hero-home.png.jpg" 
+                alt="PolyMaterialBridge Hero - Polymer Logistics" 
+                className="w-full h-[500px] object-cover rounded-xl shadow-2xl" 
+              />
             </div>
           </div>
         </div>
@@ -37,7 +38,11 @@ const Home: React.FC = () => {
             {/* Polyethylene (PE) */}
             <div className="group border border-slate-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300 bg-white">
               <div className="mb-6 overflow-hidden rounded-lg">
-                <PlaceholderImage label="Polyethylene (PE) Visual" aspectRatio="video" className="group-hover:scale-105 transition-transform duration-500" />
+                <img 
+                  src="/images/pe-material.png.jpg" 
+                  alt="Polyethylene (PE) Material" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" 
+                />
               </div>
               <h4 className="text-2xl font-bold text-slate-900 mb-3">PE (Polyethylene)</h4>
               <p className="text-slate-600 mb-8">
@@ -51,7 +56,11 @@ const Home: React.FC = () => {
             {/* Polypropylene (PP) */}
             <div className="group border border-slate-200 rounded-xl p-8 hover:shadow-xl transition-all duration-300 bg-white">
               <div className="mb-6 overflow-hidden rounded-lg">
-                <PlaceholderImage label="Polypropylene (PP) Visual" aspectRatio="video" className="group-hover:scale-105 transition-transform duration-500" />
+                <img 
+                  src="/images/pp-material.jpg.jpg" 
+                  alt="Polypropylene (PP) Material" 
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500 rounded-lg" 
+                />
               </div>
               <h4 className="text-2xl font-bold text-slate-900 mb-3">PP (Polypropylene)</h4>
               <p className="text-slate-600 mb-8">
