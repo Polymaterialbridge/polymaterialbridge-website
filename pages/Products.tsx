@@ -1,23 +1,24 @@
-
 import React from 'react';
-import PlaceholderImage from '../components/PlaceholderImage';
 
 const Products: React.FC = () => {
   const products = [
     {
       title: 'HDPE (High-Density Polyethylene)',
       description: 'Known for its high strength-to-density ratio, HDPE is ideal for pipes, blow-molded bottles, and heavy-duty containers.',
-      apps: 'Infrastructure, Packaging, Industrial Storage'
+      apps: 'Infrastructure, Packaging, Industrial Storage',
+      image: '/images/hdpe-product.jpg'
     },
     {
       title: 'LDPE (Low-Density Polyethylene)',
       description: 'Valued for its flexibility and toughness, LDPE is widely used in films, coatings, and squeeze bottles.',
-      apps: 'Agricultural Films, Shrink Wraps, Laminations'
+      apps: 'Agricultural Films, Shrink Wraps, Laminations',
+      image: '/images/ldpe-product.jpg.jpg'
     },
     {
       title: 'PP (Polypropylene)',
       description: 'A versatile thermoplastic polymer used in a wide variety of applications including packaging and labeling, textiles, and stationary.',
-      apps: 'Automotive Parts, Medical Devices, Food Packaging'
+      apps: 'Automotive Parts, Medical Devices, Food Packaging',
+      image: '/images/pp-product.jpg'
     }
   ];
 
@@ -35,7 +36,11 @@ const Products: React.FC = () => {
           {products.map((product, index) => (
             <div key={index} className="flex flex-col md:flex-row gap-8 bg-white border border-slate-200 rounded-2xl p-8 shadow-sm hover:shadow-md transition-shadow">
               <div className="md:w-1/3">
-                <PlaceholderImage label={`${product.title} Visual`} aspectRatio="square" />
+                <img 
+                  src={product.image} 
+                  alt={`${product.title} Material`} 
+                  className="w-full h-64 object-cover rounded-xl shadow-md"
+                />
               </div>
               <div className="md:w-2/3 flex flex-col justify-center">
                 <h2 className="text-2xl font-bold text-slate-900 mb-4">{product.title}</h2>

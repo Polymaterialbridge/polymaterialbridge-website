@@ -1,6 +1,4 @@
-
 import React from 'react';
-import PlaceholderImage from '../components/PlaceholderImage';
 
 const About: React.FC = () => {
   return (
@@ -21,7 +19,11 @@ const About: React.FC = () => {
               market insights and a vast network of suppliers across the continent.
             </p>
           </div>
-          <PlaceholderImage label="Company Team / Office Visual" aspectRatio="video" />
+          <img 
+            src="/images/about-team.jpg.png" 
+            alt="PolyMaterialBridge Team - Handshake Business" 
+            className="w-full h-96 object-cover rounded-xl shadow-xl" 
+          />
         </div>
 
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-12">

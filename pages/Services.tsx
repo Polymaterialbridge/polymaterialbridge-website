@@ -1,23 +1,21 @@
-
 import React from 'react';
-import PlaceholderImage from '../components/PlaceholderImage';
 
 const Services: React.FC = () => {
   const services = [
     {
       title: 'Customer Care',
       desc: 'Dedicated support for all our partners. We prioritize long-term relationships through attentive communication and personalized service strategies.',
-      icon: '🤝'
+      image: '/images/service-customer.jpg.png'
     },
     {
       title: 'Trading & Brokerage',
       desc: 'Independent market analysis and procurement strategies. We find the best match for your supply needs or your excess production.',
-      icon: '📈'
+      image: '/images/service-trading.jpg.jpg'
     },
     {
       title: 'Logistics',
       desc: 'Seamless end-to-end transportation management. We coordinate road, sea, and rail logistics to ensure timely delivery across borders.',
-      icon: '🚛'
+      image: '/images/service-logistics.jpg.jpg'
     }
   ];
 
@@ -29,13 +27,17 @@ const Services: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-20">
           {services.map((service, idx) => (
             <div key={idx} className="bg-white p-10 rounded-2xl shadow-sm border border-slate-200 text-center flex flex-col h-full">
-              <div className="text-4xl mb-6">{service.icon}</div>
+              <div className="text-4xl mb-6">🤝</div>
               <h3 className="text-xl font-bold text-slate-900 mb-4">{service.title}</h3>
               <p className="text-slate-600 leading-relaxed mb-6 flex-grow">
                 {service.desc}
               </p>
               <div className="w-full mt-4">
-                <PlaceholderImage label={`${service.title} Detail`} aspectRatio="video" className="mb-4" />
+                <img 
+                  src={service.image} 
+                  alt={`${service.title} Service`} 
+                  className="w-full h-64 object-cover rounded-xl shadow-md mb-4"
+                />
               </div>
             </div>
           ))}

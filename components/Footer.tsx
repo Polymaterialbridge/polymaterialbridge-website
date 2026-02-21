@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           {/* Logo & Slogan */}
           <div>
             <div className="mb-4">
-              <img src="/logo.png" alt="PolyMaterialBridge" className="h-28 md:h-32 lg:h-36 w-auto" />
+              <img src="/logo.png" alt="PolyMaterialBridge" className="h-32 md:h-36 lg:h-40 w-auto" />
             </div>
             <p className="text-sm italic leading-relaxed">
               "Connecting Polymer Supply and Demand across Europe."
